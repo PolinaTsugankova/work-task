@@ -1,14 +1,147 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Test task</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header class="header">
+      <div class="container">
+        <img
+          class="header-logo"
+          src="../src/images/logo.svg"
+          alt="Logo"
+          width="29"
+          height="20"
+        />
+        <p class="logo-text">Test Task</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-text">
+            Do The Task
+            <br />
+            And Have Fun
+          </h1>
+
+          <h2 class="hero-dcr">Be Persistent &#38; Attentive To Details</h2>
+
+          <div class="block-list">
+            <div class="hero-first-block">
+              <img
+                class="andy-photo"
+                src="../src/images/andy-photo.jpg"
+                alt="Andy`s photo"
+                width="115"
+                height="115"
+              />
+
+              <div class="first-block-text">
+                <h3 class="hero-name">Andy</h3>
+                <h4 class="hero-work">Head Of UX Design</h4>
+                <p class="hero-comment">
+                  “The Style Of This Test Task Matches The Style That You Will
+                  Be Making Real Job In.”
+                </p>
+              </div>
+            </div>
+
+            <div class="hero-second-block">
+              <h3 class="hero-fonts">Fonts &#38; Colors Matter</h3>
+
+              <div class="hero-item-wrapper">
+                <div class="hero-item-design">
+                  <h4 class="hero-design-title">Responsive Design</h4>
+                  <h5 class="hero-price">&#36;19840</h5>
+                  <p class="hero-design-number">+8.5&#37;</p>
+                  <p class="design-dcr">You’ll Learn A Lot From This Task</p>
+                </div>
+
+                <div class="hero-item-mobile">
+                  <h4 class="hero-mobile-title">Mobile Friendly</h4>
+                  <div class="prices-wrapper">
+                    <h5 class="hero-price">&#36;12380</h5>
+                    <p class="hero-mobile-number">-3.2&#37;</p>
+                  </div>
+                  <p class="design-dcr">Don’t Forget About Small Devices</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>What Pros Are Saying...</h2>
+        <ul>
+          <li>
+            <img src="../src/images/nia-photo.jpg" alt="Nia`s photo" />
+            <h3>Nia</h3>
+            <p>“This task can be perfect for students from FIT”</p>
+          </li>
+          <li>
+            <img src="../src/images/abigale.png" alt="" />
+            <h3>Abigale</h3>
+            <p>
+              “I am so sexy, that men are doing test tasks for me for free.”
+            </p>
+          </li>
+          <li>
+            <img src="../src/images/fedya.jpg" alt="" />
+            <h3>Fedya</h3>
+            <p>“Kuku Epta. EZ Task.”</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What Other Coders Are Saying...</h2>
+        <ul>
+          <li>
+            <img src="./images/john.jpg" alt="John`s photo" />
+            <h3>Wow, this test task is absolutely amazing! Loved it!</h3>
+            <p>John Kennedy</p>
+            <p>05:20</p>
+            <img src="./images/5-stars.jpg" alt="5 stars result" />
+          </li>
+          <li>
+            <img src="./images/vasiliy.jpg" alt="Vasiliy`s photo" />
+            <h3>Holy cow, developers rock, but I missed the 5 stars button.</h3>
+            <p>Vasiliy Igorsky</p>
+            <p>14:30</p>
+            <img src="./images/4-stars.jpg" alt="4 stars result" />
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <h2>Don’t Forget To Deploy Project To GitHub Pages</h2>
+        <h3>
+          &#169; Test Task Limited&#8482;, 2020. All rights reserved. Terms Of
+          Service | Privacy Policy
+        </h3>
+      </footer>
+    </main>
   </body>
 </html>
